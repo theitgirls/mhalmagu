@@ -5,16 +5,24 @@
         <title>First JavaScript</title>
         <script>
             function firstfunction () {
-                alert("Hello IT Girls Students");
+                //alert("Hello IT Girls Students");
             }
             function secondfunction () {
                 alert("Let's do a second alert.");
             }
+            function changecolor () {
+                document.getElementById("wendy").style.color = document.getElementById("colorpicker").value;
+            }
         </script>
     </head>
-    <body onload="firstfunction();">
+    <body onload="firstfunction();" id="wendy">
         <h1>IT Girls</h1>
         <p>This is our first JavaScript program.</p>
         <a onclick="secondfunction();">Click for secret message.</a>
+
+        <form>
+            <input type="color" id="colorpicker" onchange="changecolor();">
+        </form>
+
     </body>
 </html>
