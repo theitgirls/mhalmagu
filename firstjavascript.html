@@ -5,13 +5,19 @@
         <title>First JavaScript</title>
         <script>
             function firstfunction () {
-                //alert("Hello IT Girls Students");
+                alert("Hello IT Girls Students");
             }
             function secondfunction () {
                 alert("Let's do a second alert.");
             }
             function changecolor () {
-                document.getElementById("wendy").style.color = document.getElementById("colorpicker").value;
+                document.getElementById("wendy").style.backgroundColor = document.getElementById("colorpicker").value;
+            }
+            function wrong () {
+                document.getElementById("rightanswer").innerHTML = "True is not correct.";
+            }
+            function right () {
+                document.getElementById("wronganswer").innerHTML = "Good job. False is not correct.";
             }
         </script>
     </head>
@@ -24,5 +30,8 @@
             <input type="color" id="colorpicker" onchange="changecolor();">
         </form>
 
+        <p>True - False: Java and Javascript are the same thing.</p>
+        <a id="wronganswer" onclick="wrong();">True</a><br>
+        <a id="rightanswer" onclick="right();">False</a>
     </body>
 </html>
