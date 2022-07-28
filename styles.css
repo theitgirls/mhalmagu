@@ -4,5 +4,13 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 h1 {color: aqua; background-color:rgb(0, 6, 97)}
+
 h2 {color: violet;}
+
 a {color:darkorchid}
+
+nav {background-color:rgb(97, 255, 189);}
+nav a {color:midnightblue}
+nav {color:midnightblue;}
+
+nav a:hover {background-color: rgb(255, 81, 0);}
